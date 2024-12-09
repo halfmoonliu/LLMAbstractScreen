@@ -15,6 +15,6 @@ The goal of this project is to develop a pipeline to leverage LLMs for title/abs
 
 ## References
 
-1. Hong C et al. (In preparation), Artificial Intelligence in Clinical Trial Participant Recruitment and Retention: A Scoping Review Protocol.
+1. Yin Z, Liu YC, et al. (manuscript) Artificial Intelligence in Clinical Trial Participant Recruitment and Retention: A Scoping Review.
 2. Guo E, Gupta M, Deng J, et al. Automated Paper Screening for Clinical Reviews Using Large Language Models: Data Analysis Study. J Med Internet Res, 2024;26:e48996.
-Li M, Sun J, Tan X, et al. Evaluating the Effectiveness of Large Language Models in Abstract Screening: A Comparative Analysis, 27 March 2024, PREPRINT available at Research Square.
+3. Li M, Sun J, Tan X, et al. Evaluating the Effectiveness of Large Language Models in Abstract Screening: A Comparative Analysis, 27 March 2024, PREPRINT available at Research Square.
