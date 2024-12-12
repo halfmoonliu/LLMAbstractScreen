@@ -1,7 +1,7 @@
 # Leveraging LLMs to Facilitate Abstract Screening for Systematic Review
 
 ## Summary
-Title and abstract screening has become a bottleneck for knowledge synthesis effort as the number of published research papers grows rapidly. Transformer-based large language models (LLMs) has demostrated improved capacity of document classifications. This 
+Title and abstract screening has become a bottleneck for knowledge synthesis effort as the number of published research papers grows rapidly. Transformer-based large language models (LLMs) has demonstrated improved capacity of document classifications. **This project leveraged the capacity of foundation LLMs to facilitate abstract screening effort given the constraint that only a few known examples** of included and excluded papers are available. With a sample dataset of 200 abstracts and 10 example abstracts to be included, the **few-shot learning model yielded a precision of 0.26 at perfect sensitivity**, better than the baseline of direct prompting (precision 0.13). This algorithm can be applied to future knowledge synthesis endeavors and reduce the workload at the abstract screening phase of systematic or scoping review.
 
 
 ## Background
@@ -13,6 +13,9 @@ Recent advancements in LLMs show promise in improving the abstract screening pro
 
 
 The goal of this project is to develop a pipeline to leverage LLMs for title/abstract screening for systematic and scoping review, addressing the limitations of current methods.  The expected deliverables are as follows: 1) A proof-of-concept pipeline for LLM-assisted paper screening for systematic/ scoping reviews. 2) A journal/conference article summarizing the results and findings.
+
+
+
 
 ## References
 
