@@ -18,7 +18,12 @@ The goal of this project is to develop a pipeline to leverage LLMs for title/abs
 
 ### Dataset
 
-CLEF 2019, a publicly available dataset containing over 80,000 abstracts and screening results from 31 systematic/scoping reviews in medicine (8 on disease diagnostic test, 20 on intervention, 1 on prognosis, and 2 on qualitative reviews) was used to evaluate the developed pipeline.
+CLEF 2019, a publicly available dataset containing over 80,000 abstracts and screening results from 31 systematic/scoping reviews in medicine (8 on disease diagnostic test, 20 on intervention, 1 on prognosis, and 2 on qualitative reviews) was used to evaluate the developed pipeline [4]. A sample dataset from the diagnosis test domain [5] were chosen for pipeline demonstration. To further decrease the cost for pipeline development, 200 abstracts were randomly for testing.
+
+### Few Shot Learning
+
+To leverage the capacity of few-show learning [6], ten example abstracts satisfying the inclusion criteria of the systematic/ scpoing review were randomly extracted from the dataset. When prompting the foundational LLM to generate a *confidence score* for the inclusion of an unseen abstract, a positive example was included in the prompt. The example was chosen from the 10 examples based on the highest cosine similarity between example abstracts and target abstract to be rated suing the BERT *cls* token representation.
+
 
 
 ## References
@@ -26,3 +31,7 @@ CLEF 2019, a publicly available dataset containing over 80,000 abstracts and scr
 1. Yin Z, Liu YC, et al. (manuscript) Artificial Intelligence in Clinical Trial Participant Recruitment and Retention: A Scoping Review.
 2. Guo E, Gupta M, Deng J, et al. Automated Paper Screening for Clinical Reviews Using Large Language Models: Data Analysis Study. J Med Internet Res, 2024;26:e48996.
 3. Li M, Sun J, Tan X, et al. Evaluating the Effectiveness of Large Language Models in Abstract Screening: A Comparative Analysis, 27 March 2024, PREPRINT available at Research Square.
+4. Kanoulas E., Li D, Azzopardi L, et al. CLEF 2019 technology assisted reviews in empirical medicine overview. In CEUR workshop proceedings. 2019;2380, 250.
+5. Roth D, Pace NL, Lee A, et al. Airway physical examination tests for detection of difficult airway management in apparently normal adult patients. Cochrane Database Syst Rev. 2018;5(5):CD008874.
+6. Nori H, Lee YT, Zhang S, et al. Can generalist foundation models outcompete special-purpose tuning? case study in medicine. arXiv. Preprint posted online November 28, 2023. Doi: 10.48550/arXiv:2311.16452.
+
